@@ -1,0 +1,1059 @@
+body {
+  background: #ccc;
+  width: 100%;
+  height: 100%;
+  font-family: 'Exo 2', sans-serif;
+  & > header {
+    .top-menu {
+      color: white;
+      width: 1186px;
+      height: 39px;
+      background: url('../images/topmen.jpg');
+      margin: 0px auto;
+      .top-info-list {
+        display: inline-block;
+        & > a {
+          font-size: 14px;
+          text-transform: uppercase;
+          padding-right: 5px;
+          float: left;
+          margin: 13px 0px 11px 5px;
+          border-right: 1px solid white;
+          text-decoration: none;
+          color: white;
+          &:first-child {
+            padding-left: 25px;
+          }
+          &:last-child {
+            padding-right: 35px;
+            border-right: none;
+          }
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+      .top-basket {
+        position: relative;
+        display: inline-block;
+        height: 39px;
+        width: 265px;
+        background: #fd6120;
+        .top-basket-goods {
+          position: absolute;
+          padding-top: 10px;
+          padding-left: 25px;
+          .two-goods {
+            display: inline-block;         
+            cursor: pointer;
+            font-weight: bold;
+            text-decoration: underline;
+            &:hover {
+              text-decoration: none;
+            }
+            &::before {
+              height: 39px;
+              width: 43px;
+              position: absolute;
+              background: url('../images/smallbask.png') no-repeat;
+              left: -20px;
+              top: 0;
+              content: "";
+            }
+          }
+          .two-two-price {
+
+            width: 85px;
+
+            font-weight: bold;
+
+          }
+        }
+      }
+      .make-call {
+        display: inline-block;
+        width: 320px;
+        height: 39px;
+        margin-left: -4px;
+        position: relative;
+        .title-call {
+          cursor: pointer;
+          text-transform: uppercase;
+          font-size: 14px;
+          margin-left: 60px;
+          top: 4px;
+          position: absolute;
+          line-height: 15px;
+          color: white;
+          text-decoration: none;
+          &::before {
+            background: url('../images/head-phone.png') no-repeat;
+            left: -40px;
+            top: 2px;
+            position: absolute;
+            content: "";
+            width: 40px;
+            height: 28px;
+          }
+          &:hover {
+            border-bottom: 1px solid;
+            color: #f9e8dd;
+          }
+        }
+        .call-icons {
+          cursor: pointer;
+          width: 28px;
+          height: 28px;
+          position: absolute;
+        }
+        
+        .mail-icon {
+          background: url('../images/mail.png');
+          left: 215px;
+          top: 5px;
+        }
+        .facebook-icon {
+          background: url('../images/facebook.png');
+          left: 247px;
+          top: 5px;
+        }
+        .vk-icon {
+          background: url('../images/vk.png');
+          left: 279px;
+          top: 5px;
+        }
+        
+      }
+      .register {
+        width: 175px;
+        background: #fd6120;
+        float: right;
+        height: 27px;
+        display: inline-block;
+        padding-top: 12px;
+        .enter {
+          cursor: pointer;
+          text-transform: uppercase;
+          font-size: 12px;
+          text-decoration: none;
+          color: white;
+          margin-left: 25px;
+          position: relative;
+          &::before {
+            position: absolute;
+            top: -15px;
+            left: -45px;
+            content: "";
+            background: url('../images/lock.png') no-repeat;
+            height: 39px;
+            width: 39px;
+          }
+          &:hover {
+            border-bottom: 1px solid;
+          }
+        }      
+        .reg {
+          color: white;
+          cursor: pointer;
+          text-transform: uppercase;
+          font-size: 12px;
+          text-align: center;
+          text-decoration: none;
+          &:hover {
+            border-bottom: 1px solid;
+          }
+        }
+      }
+    }
+    .main-headers {
+      height: 141px;
+      width: 1186px;
+      margin: 0px auto;
+      background: url('../images/headersbgr.png');
+      .right-part {
+        width: 590px;
+        height: 141px;  
+        float: right;
+        .headers-search {
+          position: relative;
+          width: 589px;
+          height: 80px;
+          background: #0e303f;
+          display: inline-block;
+          border-radius: 30px 30px 30px 20px;
+          margin-top: 10px;
+          .search-inpts {
+            padding-left: 10px;
+            width: 550px;
+            height: 35px;
+            border-radius: 30px;
+            margin-top: 5px;
+            margin-left: 12px;
+            border: none;
+            &:focus {
+              border: none;
+            }
+          }
+          .dropdown-list-search {
+            cursor: pointer;
+            padding-right: 10px;
+            text-align: center;
+            line-height: 35px;
+            width: 155px;
+            height: 37px;
+            background: #cccccc;
+            position: absolute;
+            right: 15px;
+            top: 5px;
+            border-radius: 25px;
+            font-family: 'Exo 2', sans-serif;
+            font-size: 14px;
+            .headers-arrow-orange {
+              width: 11px;
+              height: 9px;
+              background: url('../images/headers-arrow-orange.png');
+              display: inline-block;
+              position: absolute;
+              top: 15px;
+              left: 12px;
+            }
+            .search-button {
+              position: absolute;
+              display: inline-block;
+              width: 44px;
+              height: 44px;
+              border-radius: 50%;
+              background: url('../images/search-button.png');
+              right: -1px;
+              bottom: -4px;
+              cursor: pointer;
+            }
+          }
+          .search-items {
+            padding-left: 30px;
+            height: 24px; 
+            display: inline-block;
+            margin-left: 5px;
+            margin-top: 5px;
+            color: white;
+            cursor: pointer;
+            font-family: 'Exo 2', sans-serif;
+            font-size: 14px;
+            line-height: 22px;
+            margin-right: 10px;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+          .fool {
+            background: url('../images/fool-search.png') no-repeat;
+          }
+          .eve {
+            background: url('../images/eve.png') no-repeat;
+          }
+          .artist {
+            background: url('../images/artist.png') no-repeat;
+          }
+        }
+        .number {
+          position: relative;
+          display: inline-block;
+          padding-left: 5px;
+          line-height: 24px;
+          width: 586px;
+          height: 38px;
+          background: rgba(0,0,0,0.5);
+          margin-top: 12px;
+          border-radius: 25px 0px 0px 25px;
+          .number-phone {
+            position: absolute;
+            left: 75px;
+            color: white;
+            font-family: 'Lobster', cursive;
+            font-size: 34px;
+            padding-top: 8px;
+            .small-numb-phone {
+              position: absolute;
+              left: -65px;
+              font-size: 18px;
+            }
+          }
+          .clock {
+            position: relative;
+            height: 38px;
+            width: 375px;
+            float: right;
+            background: url('../images/clock.png') no-repeat center left 165px;
+            color: white;
+            font-weight: bold;
+            .work-time {
+              font-size: 14px;
+              float: right;
+              margin-top: 5px;
+              margin-right: 15px;
+            }
+            .clock-info {
+              font-size: 14px;
+              position: absolute;
+              color: white;
+              text-decoration: none;
+              left: -7px;
+              top: 5px;
+              
+              &:hover {
+                border-bottom: 1px solid;
+              }
+            }
+          } 
+        }
+      }
+      .left-part {
+        float: left;
+        width: 590px;
+        height: 141px;
+        .headers-bull {
+          width: 350px;
+          height: 118px;
+          display: inline-block;
+          background: url('../images/headers-bull.png');
+          margin-left: 20px;
+          margin-top: 10px;
+          margin-right: 20px;
+        }
+        .headers-info {
+          color: white;
+          width: 175px;
+          height: 110px;
+          border: 2px solid white;
+          display: inline-block;
+          .headers-inf-text {
+            font-size: 14px;
+            display: inline-block;
+            float: right;
+            width: 125px;
+            line-height: 14px;
+            margin-top: 5px;
+            margin-right: 5px;
+          }
+          .vockl {
+            display: inline-block;
+            float: left;
+            font-family: 'Lobster', cursive;
+            font-size: 110px;
+            width: 40px;
+            margin-right: 5px;
+          }
+        }
+      }   
+    }
+    .bottom-menu {
+      width: 1186px;   
+      background: white;
+      margin: 0px auto;
+      height: 95px;
+      & > a {
+        display: inline-block;
+        width: 100%/6.6;
+        height: 55px;
+        background: url('../images/bottom-menu-item.png') no-repeat bottom;
+        font-family: 'Lobster', cursive;
+        text-align: center;
+        font-size: 22px;
+        text-decoration: none;
+        color: black;
+        line-height: 35px;
+        margin-right: 17px;
+        &:last-child {
+          margin-right: 0px;
+          background: url('../images/orange-bottom-menu-item.png') no-repeat bottom;
+          color: white;
+        }
+        &:hover {
+          height: 70px;
+        }
+      }
+    }
+  }
+  .content {
+    width: 1186px;
+    margin: 0px auto;
+    height: 1130px;
+    background: white;
+    .baners {
+      background: white;
+      width: 150px;
+      padding-right: 20px;
+      display: inline-block;
+      float: right;
+      height: 840px;
+      margin-top: 50px;
+      .banner {
+        width: 150px;
+        height: 260px;
+        margin-bottom: 20px;
+        background: #cccccc;
+        float: left;
+      }
+    }
+    .choice {
+      font-family: 'Lobster', cursive;
+      color: #2b2e28;
+      font-size: 22px;
+      padding-bottom: 15px;
+      margin-left: 95px;
+      & > a {
+        color: black;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+    .general-title {
+      font-family: 'Lobster', cursive;
+      font-size: 50px;
+      color: #2c5871;
+      padding-bottom: 20px;
+      margin-left: 95px;
+    }
+    .general-part {
+      width: 950px;
+      height: 1100px;
+      margin-left: 35px;
+    }
+    .bigtshirt-info {
+      width: 375px;
+      height: 710px;
+      float: right;
+      color: #4d4d4d;
+      margin-top: 5px;
+      h4 {
+        font-family: 'Lobster', cursive;
+        font-size: 22px;
+        margin-top: 15px;
+        margin-bottom: 20px;
+      }
+      .bigtshirt-info-item1 {
+        border-bottom: 2px solid #958d8d;
+        position: relative;
+        height: 125px;
+        .info-tshirt-label {
+          text-transform: uppercase;
+          font-size: 24px;
+          display: inline-block;
+          margin-right: 70px;
+          
+        }
+        .info-tshirt-price {
+          font-family: 'Lobster', cursive;
+          font-size: 36px;
+        }
+        .select-numbers {
+          width: 50px;
+          display: inline-block;
+          height: 25px;
+          border: 1px solid #b3b3b3;
+          border-right: 20px solid #b3b3b3;
+          font-family: 'Lobster', cursive;
+          font-size: 18px;
+          text-align: center;
+          position: absolute;
+          padding-top: 8px;
+          left: 80px;
+          top: 45px;
+          & > i {
+            width: 11px;
+            height: 9px;
+            display: inline-block;
+          }
+          .tshirt-up {
+            background: url('../images/tshirt-up.png');
+            left: 54px;
+            position: absolute;
+            cursor: pointer;
+          }
+          .tshirt-down {
+            background: url('../images/tshirt-down.png');
+            left: 54px;
+            position: absolute;
+            top: 20px;
+            cursor: pointer;
+          }
+        }
+        .buy-tshirt {
+          width: 175px;
+          color: white;
+          float: right;
+          background: #2c5871;
+          font-family: 'Lobster', cursive;
+          font-size: 18px;
+          border: none;
+          border-radius: 25px;
+          margin-top: 27px;
+          height: 35px;
+        }
+      } 
+      .bigtshirt-info-item2 {
+        border-bottom: 2px solid #958d8d;
+        height: 105px;
+        & > span {
+          font-size: 16px;
+          font-weight: bold;
+          line-height: 20px;
+          padding-right: 5px;
+          & > i {
+            font-size: 13px;
+            font-weight: normal;
+          }
+        }
+        .density {
+          padding-right: 130px;
+        }
+      }
+      .bigtshirt-info-item3 {
+        border-bottom: 2px solid #958d8d;
+        height: 100px;
+        .colors {
+          margin-top: 13px;
+          margin-bottom: 20px;
+          & > a {
+            display: inline-block;
+            width: 25px;
+            height: 25px;
+            border: 1px dotted;
+            float: left;
+            margin-right: 5px;
+          }
+          .colors-it2 {
+            background: #ffff00;
+          }
+          .colors-it3 {
+            background: #e61a00;
+          }
+          .colors-it4 {
+            background: #17cf1a;
+          }
+          .colors-it5 {
+            background: #00cfff;
+          }
+          .colors-it6 {
+            background: #990099;
+          }
+          .colors-it7 {
+            background: #000000;
+          }
+        }
+      }
+      .bigtshirt-info-item4 {
+        border-bottom: 2px solid #958d8d;
+        height: 80px;
+        & > span {
+          display: inline-block;
+          height: 20px;
+          width: 42px;
+          position: relative;
+          margin-right: 20px;
+          & > i {
+            margin-left: 12px; 
+            display: inline-block;
+            border: 1px solid #b3b3b3;
+            width: 21px;
+            height: 21px;
+            display: inline-block;
+            position: absolute;
+            top: -3px;
+          }
+        }
+      }
+      .bigtshirt-info-item5 {
+        border-bottom: 2px solid #958d8d;
+        height: 90px;
+        & > span {
+          display: inline-block;
+          height: 20px;
+          width: 42px;
+          position: relative;
+          margin-right: 20px;
+          font-size: 12px;
+          line-height: 15px;
+          margin-left: 40px;
+          &:last-child {
+            margin-left: 25px;
+          }
+          & > i {
+            margin-left: 12px; 
+            display: inline-block;
+            border: 1px solid #b3b3b3;
+            width: 21px;
+            height: 21px;
+            display: inline-block;
+            position: absolute;
+            top: -3px;
+          }
+          .straz {
+            left: -43px;
+          }
+          .shild {
+            left: -43px;
+          }
+        }
+      }
+      .bigtshirt-info-item6 {
+        border-bottom: 2px solid #958d8d;
+        height: 120px;
+        .rek-span {
+          display: inline-block;
+          position: relative;
+          margin-left: 40px;
+          padding-right: 100px;
+          padding-bottom: 15px;
+          .rek {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 1px solid #b3b3b3;
+            position: absolute;
+            top: -3px;
+            left: -35px;
+          }
+        }
+        .same-span {
+          display: inline-block;
+          position: relative;
+          margin-left: 35px;
+          font-size: 12px;
+          padding-right: 10px;
+          .same {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 1px solid #b3b3b3;
+            position: absolute;
+            top: -4px;
+            left: -30px;
+            
+          }
+        }
+      }
+    }
+    .big-tshirt {
+      position: relative;
+      width: 504px;
+      height: 489px;
+      background: url('../images/big-tshirt.png');
+      .menu-action {
+        width: 140px;
+        height: 30px;
+        border-radius: 50px;
+        background: #f9f9f9;
+        display: inline-block;
+        margin-left: 140px;
+        margin-top: 100px;
+        .action {
+          margin-top: 3px;
+          display: inline-block;
+          width: 24px;
+          height: 24px;
+          padding-right: 0px;
+          &:first-child {
+            margin-left: 3px;
+          }
+        }
+        .act-one {
+          background: url('../images/item-save.png') no-repeat center;
+        }
+        .act-two {
+          background: url('../images/item-open.png') no-repeat center;
+        }
+        .act-three {
+          background: url('../images/item-back.png') no-repeat center;
+        }
+        .act-four {
+          background: url('../images/item-forward.png') no-repeat center;
+        }
+        .act-five {
+          background: url('../images/item-sent.png') no-repeat center;
+        }
+      }
+      .resize {
+        width: 220px;
+        height: 145px;
+        position: absolute;
+        border: 2px solid #818181;
+        top: 135px;
+        left: 135px;
+        color: #2c5871;
+        font-size: 44px;
+        font-weight: bold;
+        padding-top: 55px;
+        text-align: center;
+        text-transform: uppercase;
+        line-height: 33px;
+        & > i {
+          font-family: 'Lobster', cursive;
+          text-transform: lowercase;
+          font-size: 48px;
+          font-weight: normal;
+        }
+        .resize-points {
+          width: 5px;
+          height: 5px;
+          border: 2px solid #818181;
+          background: #ffb17c;
+          display: inline-block;
+          position: absolute;
+        }
+        .point-one {
+          top: -5px;
+          left: -5px;
+        }
+        .point-two {
+          top: -5px;          
+          right: -5px;
+        }
+        .point-three {
+          top: 197px;
+          left: -5px;
+        }
+        .point-four {
+          top: 197px;
+          left: 217px;
+        }
+      }
+      .text-menu {
+        width: 226px;
+        height: 75px;
+        margin-top: 215px;
+        margin-left: 132px;
+        .up-text-menu {
+          position: relative;
+          width: 220px;
+          height: 30px;
+          background: white;
+          margin: 0px auto;
+          border-radius: 50px;
+          & > a {
+            width: 25px;
+            height: 25px;
+            display: inline-block;
+            margin-top: 2px;
+            padding-right: 2px;
+            padding-left: 2px;
+            &:first-child {
+              margin-left: 5px;
+            }
+            &:last-child {
+              margin-right: 5px;
+            }
+          }
+          .uptext-it1 {
+            background: url('../images/item-coloralips.png') center no-repeat;
+          }
+          .uptext-it2 {
+            background: url('../images/item-A.png') center no-repeat;
+          }
+          .uptext-it3 {
+            background: url('../images/item-scale.png') center no-repeat;
+          }
+          .uptext-it4 {
+            background: url('../images/item-rotate.png') center no-repeat;
+          }
+          .uptext-it5 {
+            background: url('../images/item-okay.png') center no-repeat;
+            width: 43px;
+            height: 43px;
+            position: absolute;
+            top: -9px;
+            margin-left: 6px;
+          }
+          .uptext-it6 {
+            background: url('../images/item-cancel.png') center no-repeat;
+            float: right;
+          }
+        }
+        .down-text-menu {
+          position: relative;
+          width: 220px;
+          height: 30px;
+          background: white;
+          margin: 0px auto;
+          border-radius: 50px;
+          margin-top: 5px;
+          .dropdown-font {
+            position: absolute;
+            top: 4px;
+            left: 4px;
+            width: 100px;
+            height: 22px;
+            background: #ccc;
+            border-radius: 50px;
+            display: inline-block;
+            cursor: pointer;
+            & > ul {
+              color: #3a637a;
+              font-size: 12px;
+              margin-top: 5px;
+              margin-left: 10px;
+            }
+            & > span {
+              width: 11px;
+              height: 9px;
+              background: url('../images/tshirt-down.png');
+              display: inline-block;
+              float: right;
+              margin-top: 7px;
+              margin-right: 7px;
+            }
+          }
+          & > a {
+            width: 24px;
+            height: 24px;
+            display: inline-block;
+            margin-top: 3px;
+          }
+          .bold-text {
+            background: url('../images/item-boldtext.png') center;
+            margin-left: 108px;
+          }
+          .italic-text {
+            background: url('../images/item-italictext.png') center;
+            margin-right: 0px;
+          }
+          .alignment {
+            display: inline-block;
+            width: 42px;
+            height: 22px;
+            padding-left: 5px;
+            padding-right: 5px;
+            background: #cccccc;
+            border-radius: 50px;
+            float: right;
+            margin-top: 4px;
+            margin-right: 4px;
+            & > a {
+              width: 10px;
+              height: 11px;
+              display: inline-block;
+              margin-left: 1px;
+              margin-top: 5px;
+            }
+            .align-left {
+              background: url('../images/item-textcategory-left.png');
+            }
+            .align-center {
+              background: url('../images/item-textcategory-center.png');
+            }
+            .align-right {
+              background: url('../images/item-textcategory-right.png');
+            }
+
+          }
+        }
+      }
+    }
+    .big-tshirt-list {
+      width: 400px;
+      height: 175px;
+      margin-top: 40px;
+      margin-left: 60px;
+      & > a {
+        text-decoration: none;
+        color: #4d4d4d;
+        font-family: 'Lobster', cursive;
+        font-size: 18px;
+        display: block;
+        line-height: 20px;
+        padding-bottom: 25px;
+        width: 120px;
+        float: left;
+        position: relative;
+        min-height: 40px;
+        padding-left: 55px;
+        &:hover {
+          text-decoration: underline;
+        }
+        &::before {
+          position: absolute;
+          left: 0px;
+          top: 0px;
+          content: "";
+          width: 40px;
+          height: 40px;
+          display: inline-block;
+          margin-right: 15px;
+        }
+      }
+      .big-tshirt-list-item2 {
+        background: url('../images/item-tshirt-change.png') no-repeat;
+      }
+      .big-tshirt-list-item4 {
+        float: right;
+        background: url('../images/item-tshirt-text.png') no-repeat;
+      }
+      .big-tshirt-list-item6 {
+        float: right;
+        background: url('../images/item-tshirt-furniture.png') no-repeat;
+      }
+      .big-tshirt-list-item1 {
+        background: url('../images/item-tshirt-catalog.png') no-repeat;
+      }
+      .big-tshirt-list-item3 {
+        background: url('../images/item-tshirt-online.png') no-repeat;
+      }
+      .big-tshirt-list-item5 {
+        float: right;
+        background: url('../images/item-tshirt-your.png') no-repeat;
+      }
+    }
+    .fasion-aria {
+      width: 890px;
+      height: 280px;
+      margin-top: 50px; 
+      margin-left: 60px;
+      .photo-aria {
+        float: left;
+        height: 190px;
+        width: 310px;
+        & > h4 {
+          font-family: Lobster, cursive;
+          font-size: 22px;
+          margin-bottom: 15px;
+          color: #4d4d4d;
+        }
+        .photo {  
+          margin-right: -5px;
+          display: inline-block;
+          width: 102px;
+          height: 146px;
+        }
+        .photo1 {
+          background: url('../images/photo1.png');
+        }
+        .photo2 {
+          background: url('../images/photo2.png');
+        }
+        .photo3 {
+          background: url('../images/photo3.png');
+        }
+      }
+      .table-sizes {
+        width: 505px;
+        height: 220px;
+        display: inline-block;
+        float: right;
+        display: inline-block;
+        background: url('../images/table-tshirt.png') no-repeat left  bottom;
+        & > h4 {
+          font-family: Lobster, cursive;
+          font-size: 22px;
+          margin-bottom: 15px;
+          color: #4d4d4d;
+          margin-left: 30px;
+        }
+        .natural-table-sizes {
+          float: right;
+          width: 280px;
+          height: 150px;
+          margin-top: 10px;
+          color: #4d4d4d;
+          font-size: 18px;
+          .first-line-table-sizes {
+            height: 32px;
+            .cels-table-sizes {
+              width: 93px;
+            }
+          }
+          .line-table-sizes {
+            .cell-table-sizes {
+              padding-left: 10px;
+            }
+          }
+          .gray-line {
+            background: #d6d6d6;
+          }
+        }
+      }
+    }
+  }
+  footer {
+    font-family: 'Exo 2', sans-serif;
+    position: relative;
+    margin: 0px auto;
+    width: 1115px;
+    height: 245px;
+    padding-left: 70px;
+    background: url('../images/footer-bgr.jpg') no-repeat;
+    background-color: white;
+    .footer-lists {
+      font-family: 'Exo 2', sans-serif;
+      width: 785px;
+      display: inline-block;
+      float: right;
+      height: 208px;
+      .list-foot {
+        cursor: pointer;
+        margin-right: 90px;
+        margin-top: 25px;
+        display: inline-block;
+        float: left;
+        color: white;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 16px;
+        .title-links-its {
+          text-decoration: none;
+          color: white;
+          &:hover {
+            border-bottom: 1px solid;
+          }
+        }
+        .list-foot-item {
+          font-size: 14px;
+          line-height: 20px;
+          text-transform: lowercase;
+          font-weight: normal;
+          .list-foot-item-link {
+            text-decoration: none;
+            color: white;
+            &:hover {
+              border-bottom: 1px solid;
+            }
+          }
+        }
+      }
+      .two-list {
+        margin-right: 55px;
+      }
+      .three-list {
+        margin-right: 40px;
+      }
+      .four-list {
+        margin-right: 0px;
+      }
+    }
+    .small-bull {
+      width: 330px;
+      height: 208px;
+      margin-left: -50px;
+      display: inline-block;
+      background: url('../images/samll-bull.png') no-repeat center left 20px;
+    }
+    .footer-social {
+      cursor: pointer;
+      width: 56px;
+      height: 56px;
+      position: absolute;
+      background: url('../images/foot-mail.png') no-repeat;
+      bottom: 10px;
+      right: 140px;
+    }
+    .fot-face {
+      background: url('../images/foot-facebook.png') no-repeat;
+      right: 80px;
+    }
+    .fot-vk {
+      background: url('../images/foot-vk.png') no-repeat;
+      right: 20px;
+    }
+  }
+}
